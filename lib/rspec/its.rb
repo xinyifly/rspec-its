@@ -166,7 +166,7 @@ module RSpec
         options << {} unless options.last.kind_of?(Hash)
         options.last.merge!(:caller => its_caller)
 
-        example(nil, *options, &block)
+        it(nil, *options, &block)
 
       end
     end
